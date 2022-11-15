@@ -1,4 +1,4 @@
-body{
+.body{
     margin: 0px;
     padding: 0px;
     width: 1200px;
@@ -68,8 +68,9 @@ body{
 .icon1{
     font-size: 30px;
     color: #424242;    
-    padding-left: 1000px;
-    padding-top: 40px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
     cursor: pointer;    
 }
 .text1{
@@ -81,7 +82,7 @@ body{
 }
 .pack1{
     position: relative;
-    top: 0px;
+    top: -10px;
     left: -300px;
 }
 .pack2{
@@ -148,6 +149,9 @@ body{
     opacity: 0.1px;
 }
 @media (min-width:360px) and (max-width:1000px) {
+    .body{
+        width: 360px;
+    }
     .head{
         
     width: 100%; 
@@ -163,6 +167,10 @@ body{
         left: -880px;
         font-size: 40px;
     }
+    .flex-container{
+        width: 200;
+        flex-direction: column;
+    }
     .flex-items{
         width: 200px;
         height: 200px;
@@ -170,28 +178,41 @@ body{
     }
     .popup{
         width: 330px;
-        height: 250px;
+        height: 220px;
         position: fixed;
         top: 200px;
-        left: 0px;
+        left: 15px;
         
     }
+    .pack1{
+        
+        position: relative;
+        top: -62px;
+        left: 45px;
+    }
     .pack2{
+        margin: 10px;
         position: absolute;
-        top: 50px;
-        left: -975px;
+        top: 85px;
+        left: 10px;
     }
     .paris{
-        width: 330px;
+        width: 290px;
         height: 200px;
+        margin: 10px;
         position: absolute;
         top: 150px;
-        left: -340px;
+        left: 35px;
     }
-   .icon3{
+    .icon1{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+   /*.icon3{
         position: absolute;
         top: 50px;
         left: 100px;
         font-size: 40px;
-   }
+   }*/
 }
