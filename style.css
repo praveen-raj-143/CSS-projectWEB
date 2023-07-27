@@ -1,7 +1,6 @@
 .body{
     margin: 0px;
     padding: 0px;
-    width: 1200px;
 }
 .head{
     border: 1px solid #FFFFFF;  
@@ -150,7 +149,7 @@
 }
 @media (min-width:360px) and (max-width:1000px) {
     .body{
-        width: 350px;
+        width: 100%;
     }
     .head{
         
